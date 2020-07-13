@@ -1,12 +1,10 @@
 import React from 'react';
 import './Global.css';
 
+import Router from './routes';
+
 function App() {
-  return (
-    <div>
-      <h1>Olá Sercomp</h1>
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;
