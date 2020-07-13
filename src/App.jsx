@@ -3,8 +3,8 @@ import './Global.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Olá mundo</h1>
+    <div>
+      <h1>Olá Sercomp</h1>
     </div>
   );
 }
