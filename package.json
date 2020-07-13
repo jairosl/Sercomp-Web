@@ -1,6 +1,7 @@
 {
   "name": "sercomp",
   "version": "0.1.0",
+  "main": "index.jsx",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
