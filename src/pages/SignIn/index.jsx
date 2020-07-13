@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import './style.css';
 
-const [email, setEmail] = useState('');
-function handleInputChange(event) {
-  const inputEmail = event.target.value;
-  setEmail(inputEmail);
-}
+const SignIn = () => {
+  const [email, setEmail] = useState('');
 
-function SignIn() {
+  function handleInputChange(event) {
+    event.preventDefault();
+    const inputEmail = event.target.value;
+    setEmail(inputEmail);
+  }
+
   return (
     <>
       <div className="container">
@@ -20,7 +22,7 @@ function SignIn() {
                 <legend>
                   <h2>Dados</h2>
                 </legend>
-
+                <label htmlFor="email">Email</label>
                 <input
                   type="text"
                   name="email"
@@ -34,6 +36,6 @@ function SignIn() {
       </div>
     </>
   );
-}
+};
 
 export default SignIn;
