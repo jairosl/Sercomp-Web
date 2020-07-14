@@ -16,9 +16,7 @@ const SignIn = () => {
       <div className="container">
         <div className="main">
           <div className="logo">
-            <div className="img">
-              <img src={logo} alt="logo" color="#5C3BA0" />
-            </div>
+            <img src={logo} alt="logo" color="#5C3BA0" />
           </div>
 
           <div className="form">

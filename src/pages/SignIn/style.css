@@ -9,20 +9,35 @@
 .main {
     display: flex;
     align-items: center;
-    width: 1000px;
-    height: 560px;
+    width: 830px;
+    height: 545px;
     background-color: white;
     border-radius: 30px;
 }
 
+.logo {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .form {
-    background-color: white;
+    background-image: url(../../assets/divisor.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
 }
 
 .form input{ 
     display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
     height: 40px;
     width: 300px;
     border: 1px solid var(--primary);
@@ -30,6 +45,10 @@
     margin-bottom: 20px;
     font-size: 18px;
     padding: 5px;
+}
+
+form {
+  margin-right: 60px;
 }
 
 .form label {
@@ -49,7 +68,6 @@
     width: 180px;
     border-radius: 20px;
     background-color: var(--primary);
-    color: white;
     margin: 0 auto;
     font-size: 20px;
 }
