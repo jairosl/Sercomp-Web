@@ -1,14 +1,27 @@
 import React, { useState } from 'react';
+import { FaUserTie } from 'react-icons/fa';
 import './style.css';
 import logo from '../../assets/logo.png';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
 
-  function handleInputChange(event) {
+  function handleInputChangeEmail(event) {
     event.preventDefault();
     const inputEmail = event.target.value;
     setEmail(inputEmail);
+  }
+
+  function handleInputChangeSenha(event) {
+    event.preventDefault();
+    const inputSenha = event.target.value;
+    setSenha(inputSenha);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log(email, senha);
   }
 
   return (
@@ -20,13 +33,14 @@ const SignIn = () => {
           </div>
 
           <div className="form">
+            <FaUserTie size={120} color="#5C3BA0" />
             <form>
               <label htmlFor="email">Email</label>
               <input
                 type="text"
                 name="email"
                 id="email"
-                onChange={handleInputChange}
+                onChange={handleInputChangeEmail}
                 placeholder="Digite seu Email..."
               />
 
@@ -35,11 +49,11 @@ const SignIn = () => {
                 type="password"
                 name="senha"
                 id="senha"
-                onChange={handleInputChange}
+                onChange={handleInputChangeSenha}
                 placeholder="Digite sua Senha..."
               />
             </form>
-            <button className="btn" type="submit">
+            <button className="btn" type="submit" onClick={handleSubmit}>
               Entrar
             </button>
           </div>
