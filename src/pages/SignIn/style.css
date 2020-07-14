@@ -68,7 +68,8 @@
 }
 
 .form label {
-    font-size: 20px;
+  font-size: 18px;
+  color: var(--primary);
 }
 .form svg {
   margin-bottom: 40px;
@@ -80,7 +81,7 @@
     border-radius: 20px;
     background-color: var(--primary);
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 19px;
     color: #fff;
     cursor: pointer;
     transition: all 0.5s;
