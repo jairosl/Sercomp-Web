@@ -24,6 +24,10 @@
   flex: 2;
   align-items: center;
   justify-content: center;
+  animation-name: logo;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
 }
 
 .form {
@@ -32,7 +36,11 @@
   flex: 1;
   background-color: #fff;
   border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px ;
+  border-bottom-right-radius: 30px;
+  animation-name: form;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
  .logo {
   display: flex;
@@ -86,4 +94,21 @@
     font-size: 20px;
     color: #fff;
     margin-left: 120px;
-}   
+    cursor: pointer;
+    transition: all 0.5s;
+}  
+
+.btn:hover {
+  border-radius: 2px solid var(--primary) ;
+  border-radius: 10px;
+}
+
+@keyframes logo {
+  from {margin-top: 100px; opacity: 0;}
+  to {margin-top: 0; opacity: 1;}
+}
+
+@keyframes form {
+  from {opacity: 0; margin-left: 100px;}
+  to {opacity: 1;margin-left: 0;}
+}
