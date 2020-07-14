@@ -1,66 +1,77 @@
 .container {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(100deg, rgba(92, 59, 160, 0.94) 45%, #4369A2 75%);
+  height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(100deg, rgba(92, 59, 160, 0.94) 45%, #4369A2 75%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
-    display: flex;
-    align-items: center;
-    width: 830px;
-    height: 545px;
-    background-color: white;
-    border-radius: 30px;
+  display: flex;
+  background-color: var(--primary);
+  width: 900px;
+  height: 500px;
+  justify-content: space-between;
+  border-radius: 30px;
 }
 
 .logo {
   display: flex;
-  flex: 1;
-  width: 100%;
+  flex: 2;
   align-items: center;
   justify-content: center;
 }
 
 .form {
-    background-image: url(../../assets/divisor.png);
-    background-repeat: no-repeat;
-    background-position: right;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #fff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px ;
+}
+ .logo {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.form {
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
     flex-direction: column;
+    padding-left: 30px;
 }
 
 .form input{ 
     display: flex;
     flex-direction: column;
     height: 40px;
-    width: 300px;
+    width: 280px;
     border: 1px solid var(--primary);
     border-radius: 10px;
     margin-bottom: 20px;
-    font-size: 18px;
-    padding: 5px;
+    font-size: 16px;
+    padding: 1px 1px 1px 10px ;
 }
 
-form {
-  margin-right: 60px;
+.form form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
 }
 
 .form label {
     font-size: 22px;
-}
-
-.main {
-    background-color: var(--primary);
-}
-
-.divbtn {
-    display: flex;
 }
 
 .btn {
@@ -70,4 +81,8 @@ form {
     background-color: var(--primary);
     margin: 0 auto;
     font-size: 20px;
+}   
+
+button {
+  color: #fff;
 }

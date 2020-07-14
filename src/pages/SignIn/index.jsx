@@ -38,12 +38,10 @@ const SignIn = () => {
                 onChange={handleInputChange}
                 placeholder="Digite sua Senha..."
               />
-              <div className="divbtn">
-                <button className="btn" type="submit">
-                  Entrar
-                </button>
-              </div>
             </form>
+            <button className="btn" type="submit">
+              Entrar
+            </button>
           </div>
         </div>
       </div>
