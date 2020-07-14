@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { FaUserTie } from 'react-icons/fa';
+import { useHistory } from 'react-router-dom';
 import './style.css';
 import logo from '../../assets/logo.png';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const history = useHistory();
 
   function handleInputChangeEmail(event) {
     event.preventDefault();
@@ -22,6 +24,7 @@ const SignIn = () => {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(email, senha);
+    history.push('/dashboard');
   }
 
   return (

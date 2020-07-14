@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 import logo from '../../assets/logo.png';
 import voltaricon from '../../assets/voltaricon.png';
@@ -18,7 +19,7 @@ function Dashboard() {
             <div id="nav-dashboard">
               <ul>
                 <li>
-                  <a href="/">Cadastrar Palestra</a>
+                  <Link to="/">Cadastrar Palestra</Link>
                 </li>
                 <li>
                   <a href="/">Cadasrtar Minicurso</a>
