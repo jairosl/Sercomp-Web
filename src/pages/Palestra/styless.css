@@ -1,21 +1,35 @@
+#container-palestra {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(100deg, rgba(92, 59, 160, 0.94) 45%, #4369A2 75%);
+    font-family: Roboto, sans-serif;
+    padding: 30px 50px;
+}
+
 .palestra {
     margin-top: 20px;
     background-color: white;
-    height: 100vh;
+    height: 100%;
     width: 700px;
     border-radius: 20px;
     padding: 20px;
     font-size: 16px;
 }
 
+.palestra input {
+    padding: 2px 5px ;
+}
+
 .palestra h1 {
     text-align: center;
     color: var(--primary);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 28px;
 }
 
 form label {
-    font-size: 20px;
+    font-size: 18px;
+    color: var(--primary);
 }
 
 .titulo-input {
@@ -38,7 +52,7 @@ form label {
 .data-input {
     border: 2px solid var(--primary);
     height: 25px;
-    width: 5vw;
+    width: 120px;
     border-radius: 5px;
 }
 
@@ -55,4 +69,21 @@ form label {
     height: 25vh;
     width: 42vw;
     border-radius: 5px;
+    padding: 5px 0px 0px 5px;
+    font-size: 18px;
 }
+
+form .field-group {
+    flex: 1;
+    display: flex;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form .field-group .field + .field {
+    margin-left: 24px;
+  }

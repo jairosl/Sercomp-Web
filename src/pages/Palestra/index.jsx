@@ -6,7 +6,7 @@ import voltaricon from '../../assets/voltaricon.png';
 function Palestra() {
   return (
     <>
-      <div id="container-dashboard">
+      <div id="container-palestra">
         <div className="conteudo">
           <div className="sair">
             <img src={voltaricon} alt="voltar" />
@@ -16,45 +16,57 @@ function Palestra() {
             <img src={logo} alt="logo" />
 
             <div className="palestra">
-              <h1>Cadastro de Palestras</h1>
+              <h1>
+                Cadastro
+                <br /> de Palestras
+              </h1>
               <form>
-                <label>Título da Palestra: </label>
-                <br />
-                <input
-                  type="text"
-                  className="titulo-input"
-                  placeholder="Digite um título..."
-                />
-                <label>Nome do Palestrante: </label>
-                <br />
-                <input
-                  type="text"
-                  className="nome-palestrante-input"
-                  placeholder="Digite o nome completo..."
-                />
-                <label>Data: </label>
-                <input
-                  type="text"
-                  className="data-input"
-                  placeholder="Ex: 15/07"
-                />
-                <label>Hora: </label>
-                <input
-                  type="text"
-                  className="data-input"
-                  placeholder="Ex: 19:30"
-                />
-                <label>Sala:</label>
-                <br />
-                <input
-                  type="text"
-                  className="sala-input"
-                  placeholder="Ex: 202"
-                />
-                <br />
-                <label>Descrição do Palestrante:</label>
-                <br />
-                <input type="text" className="descricao-input" />
+                <div className="field">
+                  <label>Título da Palestra: </label>
+                  <input
+                    type="text"
+                    className="titulo-input"
+                    placeholder="Digite um título..."
+                  />
+                </div>
+                <div className="field-group">
+                  <div className="field">
+                    <label>Nome do Palestrante: </label>
+                    <input
+                      type="text"
+                      className="nome-palestrante-input"
+                      placeholder="Digite o nome completo..."
+                    />
+                  </div>
+                  <div className="field">
+                    <label>Data: </label>
+                    <input
+                      type="text"
+                      className="data-input"
+                      placeholder="Ex: 15/07"
+                    />
+                  </div>
+                  <div className="field">
+                    <label>Hora: </label>
+                    <input
+                      type="text"
+                      className="data-input"
+                      placeholder="Ex: 19:30"
+                    />
+                  </div>
+                </div>
+                <div className="field">
+                  <label>Sala:</label>
+                  <input
+                    type="text"
+                    className="sala-input"
+                    placeholder="Ex: 202"
+                  />
+                </div>
+                <div className="field">
+                  <label>Descrição do Palestrante:</label>
+                  <textarea className="descricao-input" />
+                </div>
               </form>
             </div>
           </div>
