@@ -19,7 +19,7 @@ function Dashboard() {
             <div id="nav-dashboard">
               <ul>
                 <li>
-                  <Link to="/">Cadastrar Palestra</Link>
+                  <Link to="/palestra">Cadastrar Palestra</Link>
                 </li>
                 <li>
                   <a href="/">Cadasrtar Minicurso</a>
