@@ -12,7 +12,7 @@ function Palestra() {
             <img src={voltaricon} alt="voltar" />
           </div>
 
-          <div id="main-dashboard">
+          <div id="main-palestra">
             <img src={logo} alt="logo" />
 
             <div className="palestra">

@@ -6,10 +6,21 @@
     padding: 30px 50px;
 }
 
+#main-palestra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-palestra img {
+    height: 200px;
+    width: 300px;
+}
+
 .palestra {
     margin-top: 20px;
     background-color: white;
-    height: 100%;
     width: 700px;
     border-radius: 20px;
     padding: 20px;
@@ -86,4 +97,9 @@ form .field {
 
 form .field-group .field + .field {
     margin-left: 24px;
-  }
+}
+
+.btn-cadastro {
+    
+}
+
