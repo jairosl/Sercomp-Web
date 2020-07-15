@@ -1,7 +1,6 @@
 #container-dashboard {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    background: linear-gradient(100deg, rgba(92, 59, 160, 0.94) 45%, #4369A2 75%);
     font-family: Roboto, sans-serif;
     padding: 30px 50px;
 }
