@@ -63,7 +63,7 @@ form label {
 .data-input {
     border: 2px solid var(--primary);
     height: 35px;
-    width: 110px;
+    width: 120px;
     border-radius: 5px;
 }
 
@@ -73,6 +73,14 @@ form label {
     width: 90px;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.hora-input {
+  border: 2px solid var(--primary);
+  height: 35px;
+  width: 75px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .descricao-input {

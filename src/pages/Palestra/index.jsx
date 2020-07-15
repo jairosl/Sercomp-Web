@@ -1,4 +1,5 @@
 import React from 'react';
+import InputMask from 'react-input-mask';
 import './styles.css';
 import logo from '../../assets/logo.png';
 import voltaricon from '../../assets/voltaricon.png';
@@ -29,6 +30,7 @@ function Palestra() {
                     placeholder="Digite um título..."
                   />
                 </div>
+
                 <div className="field-group">
                   <div className="field">
                     <label>Nome do Palestrante: </label>
@@ -38,35 +40,45 @@ function Palestra() {
                       placeholder="Digite o nome completo..."
                     />
                   </div>
+
                   <div className="field">
                     <label>Data: </label>
-                    <input
-                      type="text"
+                    <InputMask
                       className="data-input"
-                      placeholder="15/07/2020"
+                      mask="99/99/9999"
+                      maskPlaceholder="dd/mm/yyyy"
+                      placeholder="dd/mm/yyyy"
                     />
                   </div>
+
                   <div className="field">
                     <label>Hora: </label>
+                    <InputMask
+                      className="hora-input"
+                      placeholder="00:00"
+                      mask="99:99"
+                      maskPlaceholder="hh:mm"
+                    />
+                  </div>
+
+                  <div className="field">
+                    <label>Sala:</label>
                     <input
                       type="text"
-                      className="data-input"
-                      placeholder="19:30"
+                      className="sala-input"
+                      placeholder="Ex: 202"
                     />
                   </div>
                 </div>
-                <div className="field">
-                  <label>Sala:</label>
-                  <input
-                    type="text"
-                    className="sala-input"
-                    placeholder="Ex: 202"
-                  />
-                </div>
+
                 <div className="field">
                   <label>Descrição do Palestrante:</label>
-                  <textarea className="descricao-input" />
+                  <textarea
+                    className="descricao-input"
+                    placeholder="Descreva o palestrante..."
+                  />
                 </div>
+
                 <div className="button">
                   <button type="submit">Cadastrar</button>
                 </div>
