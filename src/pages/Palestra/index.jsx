@@ -43,7 +43,7 @@ function Palestra() {
                     <input
                       type="text"
                       className="data-input"
-                      placeholder="Ex: 15/07"
+                      placeholder="15/07/2020"
                     />
                   </div>
                   <div className="field">
@@ -51,7 +51,7 @@ function Palestra() {
                     <input
                       type="text"
                       className="data-input"
-                      placeholder="Ex: 19:30"
+                      placeholder="19:30"
                     />
                   </div>
                 </div>
@@ -66,6 +66,9 @@ function Palestra() {
                 <div className="field">
                   <label>Descrição do Palestrante:</label>
                   <textarea className="descricao-input" />
+                </div>
+                <div className="button">
+                  <button type="submit">Cadastrar</button>
                 </div>
               </form>
             </div>
