@@ -1,0 +1,39 @@
+#container-participante {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20px;
+}
+
+#main-participante {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-participante img {
+    height: 180px;
+    width: 250px;
+}
+
+input#email {
+    width: 300px;
+}
+
+input#senha {
+    width: 150px;
+}
+
+select#universidade {
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid var(--primary);
+    height: 35px;
+    font-size: 16px;
+}
+
+select#universidade option {
+    background-color: var(--primary);
+    color: white;
+}

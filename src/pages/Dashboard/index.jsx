@@ -25,7 +25,7 @@ function Dashboard() {
                   <Link to="/minicurso">Cadastrar Minicurso</Link>
                 </li>
                 <li>
-                  <a href="/">Cadastrar Participantes</a>
+                  <Link to="/participante">Cadastrar Participantes</Link>
                 </li>
                 <li>
                   <a href="/">Listar Participantes</a>

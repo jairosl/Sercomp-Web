@@ -2,7 +2,7 @@ import React from 'react';
 import InputMask from 'react-input-mask';
 import './style.css';
 import logo from '../../assets/logo.png';
-// TODO: Título, {Professor, Sala, Qnt_alunos}, {Data e hora} e Descrição
+
 function Minicurso() {
   return (
     <>
