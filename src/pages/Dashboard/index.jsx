@@ -22,7 +22,7 @@ function Dashboard() {
                   <Link to="/palestra">Cadastrar Palestra</Link>
                 </li>
                 <li>
-                  <a href="/">Cadasrtar Minicurso</a>
+                  <Link to="/minicurso">Cadastrar Minicurso</Link>
                 </li>
                 <li>
                   <a href="/">Cadastrar Participantes</a>
