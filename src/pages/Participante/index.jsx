@@ -23,18 +23,18 @@ function Participante() {
               </div>
               <div className="field-group">
                 <div className="field">
-                  <label htmlFor="email">Email:</label>
+                  <label htmlFor="email-participante">Email:</label>
                   <input
                     type="email"
-                    id="email"
+                    id="email-participante"
                     placeholder="Digite o Email..."
                   />
                 </div>
                 <div className="field">
-                  <label htmlFor="senha">Senha: </label>
+                  <label htmlFor="senha-participante">Senha: </label>
                   <input
                     type="password"
-                    id="senha"
+                    id="senha-participante"
                     placeholder="Digite a Senha..."
                   />
                 </div>
