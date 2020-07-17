@@ -41,7 +41,7 @@ function Minicurso() {
                 </div>
                 <div className="field">
                   <label htmlFor="sala">Sala:</label>
-                  <input type="text" id="sala" placeholder="Sala..." />
+                  <input type="text" id="sala" placeholder="Sala" />
                 </div>
                 <div className="field">
                   <label>Data:</label>
