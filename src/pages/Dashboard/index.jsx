@@ -12,6 +12,7 @@ function Dashboard() {
 
           <div id="main-dashboard">
             <img src={logo} alt="logo" />
+            <p>Participantes: 3</p>
 
             <div id="nav-dashboard">
               <ul>
@@ -34,7 +35,6 @@ function Dashboard() {
                 Sair
               </Link>
             </div>
-            <p>Participantes: 3</p>
           </div>
 
           <div className="vazio" />
