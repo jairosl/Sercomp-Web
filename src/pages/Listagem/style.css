@@ -1,0 +1,70 @@
+#container-listagem {
+    height: 100vh;
+    padding-top: 20px;
+}
+
+#main-listagem {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-listagem img {
+    height: 180px;
+    width: 250px;
+}
+
+#titulo-listagem:first-child {
+    text-align: left;
+}
+
+#titulo-listagem:not(:first-child) {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#listagem {
+    width: 700px;
+}
+
+#listagem tr {
+    text-align: left;
+}
+
+#listagem-titulo {
+    color: var(--primary);
+}
+
+#listagem, th, td {
+    border: 2px solid var(--primary);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#voltar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+#voltar button {
+    font-size: 20px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20px;
+    width: 120px;
+    border: 1px solid red;
+    transition: all 0.3s;
+}
+
+#voltar button:hover {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+

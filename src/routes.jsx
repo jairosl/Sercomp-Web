@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Palestra from './pages/Palestra';
 import Minicurso from './pages/Minicurso';
 import Paricipante from './pages/Participante';
+import Listagem from './pages/Listagem';
 
 function routes() {
   return (
@@ -15,6 +16,7 @@ function routes() {
       <Route component={Palestra} path="/palestra" />
       <Route component={Minicurso} path="/minicurso" />
       <Route component={Paricipante} path="/participante" />
+      <Route component={Listagem} path="/listagem" />
     </BrowserRouter>
   );
 }

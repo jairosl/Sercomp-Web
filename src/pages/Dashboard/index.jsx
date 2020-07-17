@@ -28,7 +28,7 @@ function Dashboard() {
                   <Link to="/participante">Cadastrar Participantes</Link>
                 </li>
                 <li>
-                  <a href="/">Listar Participantes</a>
+                  <Link to="/listagem">Listagem dos Dados</Link>
                 </li>
               </ul>
             </div>
