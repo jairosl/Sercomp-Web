@@ -1,17 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { FaUserTie } from 'react-icons/fa';
 import { useHistory } from 'react-router-dom';
+import * as yup from 'yup';
 import './style.css';
 import logo from '../../assets/logo.png';
+
+import api from '../../services/api';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [error, setError] = useState({});
+
   const history = useHistory();
+
+  const dataSchema = yup.object().shape({
+    email: yup.string().email().required(),
+    senha: yup.string().required(),
+  });
 
   useEffect(() => {
     localStorage.clear();
-    console.log('Local store limpo');
   }, []);
 
   function handleInputChangeEmail(event) {
@@ -26,10 +35,25 @@ const SignIn = () => {
     setSenha(inputSenha);
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    console.log(email, senha);
-    history.push('/dashboard');
+    const data = { email, senha };
+    if (!dataSchema.isValidSync(data)) {
+      setError({ status: true, menssage: 'Usuario ou Senha invalido' });
+    } else {
+      setError({ status: false });
+      try {
+        const response = await api.post('/admin', {
+          email,
+          senha,
+        });
+
+        localStorage.setItem('id', `${response.data.id}`);
+        history.push('/dashboard');
+      } catch (Error) {
+        setError({ status: true, menssage: ` ${Error.response.data.error}` });
+      }
+    }
   }
 
   return (
@@ -60,6 +84,7 @@ const SignIn = () => {
                 onChange={handleInputChangeSenha}
                 placeholder="Digite sua Senha..."
               />
+              {error.status && <p id="error">*{error.menssage}</p>}
             </form>
             <button className="btn" type="submit" onClick={handleSubmit}>
               Entrar

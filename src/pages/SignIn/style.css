@@ -95,3 +95,20 @@
   from {margin-top: 100px; opacity: 0;}
   to {margin-top: 0; opacity: 1;}
 }
+
+p#error {
+  color: red;
+  font-size: 15px;
+  margin-top: 0;
+  text-align: right;
+  margin-bottom: 20px;
+  animation-name: error;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes error {
+  from {opacity: 0;}
+  to { opacity: 1;}
+}
