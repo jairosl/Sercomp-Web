@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaUserTie } from 'react-icons/fa';
 import { useHistory } from 'react-router-dom';
 import './style.css';
@@ -8,6 +8,11 @@ const SignIn = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const history = useHistory();
+
+  useEffect(() => {
+    localStorage.clear();
+    console.log('Local store limpo');
+  }, []);
 
   function handleInputChangeEmail(event) {
     event.preventDefault();
