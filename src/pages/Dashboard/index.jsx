@@ -1,9 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
 import logo from '../../assets/logo.png';
 
 function Dashboard() {
+  const history = useHistory();
+
+  useEffect(() => {
+    const id = localStorage.getItem('id');
+    if (!id) history.push('/');
+  }, []);
   return (
     <>
       <div id="container-dashboard">
