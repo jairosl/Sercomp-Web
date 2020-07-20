@@ -9,7 +9,7 @@ function Dashboard() {
   useEffect(() => {
     const id = localStorage.getItem('id');
     if (!id) history.push('/');
-  }, []);
+  }, [history]);
   return (
     <>
       <div id="container-dashboard">
