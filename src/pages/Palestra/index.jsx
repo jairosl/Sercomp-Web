@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import InputMask from 'react-input-mask';
 import { FiLoader } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 import { useHistory } from 'react-router-dom';
 import './styles.css';
 import * as yup from 'yup';
@@ -95,6 +96,9 @@ function Palestra() {
       setError({ status: false });
       document.getElementById('formulario-palestra').reset();
       setIsLoading(false);
+      toast.success('Palestra Criada com Sucesso', {
+        position: toast.POSITION.BOTTOM_RIGHT,
+      });
       return null;
     } catch (Error) {
       setError({ status: true, menssage: `${Error.response.data.error}` });
