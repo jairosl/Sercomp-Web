@@ -1,4 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Sercomp Project</h1>
+
+<p align="center">
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnology">Tecnology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>
+</p>
+
+<h1 align="center">
+  <img src="https://github.com/jairosl/Sercomp-Web/blob/master/src/assets/logo.png" alt="logo.png" width="400px" height="250px">
+</h1>
+
+
+<p>
+  The Sercomp project aims to improve on the speed of we search event informations, like date, hour, place e etc.
+<p>
+
+
 
 ## Available Scripts
 
