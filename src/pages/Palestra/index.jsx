@@ -93,16 +93,22 @@ function Palestra() {
     try {
       const cabecalho = { id: idAdmin };
       await api.post('/palestra', dados, { headers: cabecalho });
+
       setError({ status: false });
+
       document.getElementById('formulario-palestra').reset();
       setIsLoading(false);
+
       toast.success('Palestra Criada com Sucesso', {
         position: toast.POSITION.BOTTOM_RIGHT,
       });
+
       return null;
     } catch (Error) {
       setError({ status: true, menssage: `${Error.response.data.error}` });
+
       setIsLoading(false);
+
       return null;
     }
   }
