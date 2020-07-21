@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
 import { useHistory } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 
 function Listagem() {
   const history = useHistory();
+
+  useEffect(() => {
+    const id = localStorage.getItem('id');
+    if (!id) history.push('/');
+  }, [history]);
 
   return (
     <>

@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import InputMask from 'react-input-mask';
+import { FiLoader } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 import './styles.css';
 import * as yup from 'yup';
 import logo from '../../assets/logo.png';
@@ -14,6 +16,11 @@ function Palestra() {
   const [sala, setSala] = useState('');
   const [descricao, setDescricao] = useState('');
 
+  const [isloading, setIsLoading] = useState(false);
+  const [error, setError] = useState({ status: false, menssage: '' });
+
+  const history = useHistory();
+
   const idAdmin = localStorage.getItem('id');
 
   const dataSchema = yup.object().shape({
@@ -24,6 +31,11 @@ function Palestra() {
     sala: yup.string().required(),
     descricao: yup.string().required(),
   });
+
+  useEffect(() => {
+    const id = localStorage.getItem('id');
+    if (!id) history.push('/');
+  }, [history]);
 
   function handleInputTitulo(event) {
     event.preventDefault();
@@ -63,6 +75,7 @@ function Palestra() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+    setIsLoading(true);
     const dados = {
       titulo,
       nomepalestrante: nome,
@@ -72,14 +85,21 @@ function Palestra() {
       descricao,
     };
     if (!dataSchema.isValidSync(dados)) {
-      console.log('notNull');
+      setError({ status: true, menssage: 'Campo ou dados invalidos' });
+      setIsLoading(false);
+      return null;
     }
     try {
       const cabecalho = { id: idAdmin };
       await api.post('/palestra', dados, { headers: cabecalho });
+      setError({ status: false });
       document.getElementById('formulario-palestra').reset();
+      setIsLoading(false);
+      return null;
     } catch (Error) {
-      console.log(Error.response.data.error);
+      setError({ status: true, menssage: `${Error.response.data.error}` });
+      setIsLoading(false);
+      return null;
     }
   }
 
@@ -157,13 +177,24 @@ function Palestra() {
                   onChange={handleInputDescricao}
                 />
               </div>
-
+            </form>
+            {!isloading ? (
               <div className="button">
                 <button type="submit" onClick={handleSubmit}>
                   Cadastrar
                 </button>
               </div>
-            </form>
+            ) : (
+              <div id="loading-Palestra">
+                <div id="loadding-container">
+                  <div id="loadding-container-icon">
+                    <FiLoader size={25} />
+                  </div>
+                  <div id="loadding-container-text">Carregando</div>
+                </div>
+              </div>
+            )}
+            {error.status && <p id="error-palestra">*{error.menssage}</p>}
           </div>
         </div>
       </div>

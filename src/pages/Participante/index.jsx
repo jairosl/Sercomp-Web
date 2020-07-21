@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import './style.css';
 import * as yup from 'yup';
 import logo from '../../assets/logo.png';
@@ -12,6 +13,8 @@ function Participante() {
   const [universidade, setUniversidade] = useState('uepb');
   const [curso, setCurso] = useState('');
 
+  const history = useHistory();
+
   const idAdmin = localStorage.getItem('id');
 
   const dataSchema = yup.object().shape({
@@ -21,6 +24,11 @@ function Participante() {
     universidade: yup.string().required(),
     curso: yup.string().required(),
   });
+
+  useEffect(() => {
+    const id = localStorage.getItem('id');
+    if (!id) history.push('/');
+  }, [history]);
 
   function handleInputNome(event) {
     event.preventDefault();

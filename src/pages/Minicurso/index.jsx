@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import InputMask from 'react-input-mask';
+import { useHistory } from 'react-router-dom';
 import './style.css';
 import * as yup from 'yup';
 import logo from '../../assets/logo.png';
@@ -17,6 +18,8 @@ function Minicurso() {
 
   const idAdmin = localStorage.getItem('id');
 
+  const history = useHistory();
+
   const dataSchema = yup.object().shape({
     titulo: yup.string().required(),
     professor: yup.string().required(),
@@ -26,6 +29,11 @@ function Minicurso() {
     qntAlunos: yup.number().required(),
     descricao: yup.string().required(),
   });
+
+  useEffect(() => {
+    const id = localStorage.getItem('id');
+    if (!id) history.push('/');
+  }, [history]);
 
   function handleInputTitulo(event) {
     event.preventDefault();
