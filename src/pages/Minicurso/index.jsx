@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import InputMask from 'react-input-mask';
+import { toast } from 'react-toastify';
+import { FiLoader } from 'react-icons/fi';
 import { useHistory } from 'react-router-dom';
 import './style.css';
 import * as yup from 'yup';
@@ -15,6 +17,9 @@ function Minicurso() {
   const [sala, setSala] = useState('');
   const [qntAlunos, setQntAlunos] = useState(0);
   const [descricao, setDescricao] = useState('');
+
+  const [isloading, setIsLoading] = useState(false);
+  const [error, setError] = useState({ status: false, menssage: '' });
 
   const idAdmin = localStorage.getItem('id');
 
@@ -79,6 +84,7 @@ function Minicurso() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+    setIsLoading(true);
     const dados = {
       titulo,
       professor,
@@ -89,27 +95,38 @@ function Minicurso() {
       descricao,
     };
     if (!dataSchema.isValidSync(dados)) {
-      console.log('Erro');
-    } else {
-      try {
-        const cabecalho = { id: idAdmin };
-        await api.post(
-          '/minicurso',
-          {
-            titulo,
-            professor,
-            sala,
-            data,
-            horario,
-            qnt_alunos: qntAlunos,
-            descricao,
-          },
-          { headers: cabecalho }
-        );
-        document.getElementById('formulario-minicurso').reset();
-      } catch (Error) {
-        console.log(Error.response.data.error);
-      }
+      setError({ status: true, menssage: 'Campo ou dados invalidos' });
+      setIsLoading(false);
+      return null;
+    }
+    try {
+      const cabecalho = { id: idAdmin };
+      await api.post(
+        '/minicurso',
+        {
+          titulo,
+          professor,
+          sala,
+          data,
+          horario,
+          qnt_alunos: qntAlunos,
+          descricao,
+        },
+        { headers: cabecalho }
+      );
+      document.getElementById('formulario-minicurso').reset();
+      setIsLoading(false);
+
+      toast.success('Minicurso Criado com Sucesso', {
+        position: toast.POSITION.BOTTOM_RIGHT,
+      });
+      return null;
+    } catch (Error) {
+      setError({ status: true, menssage: `${Error.response.data.error}` });
+
+      setIsLoading(false);
+
+      return null;
     }
   }
 
@@ -193,12 +210,34 @@ function Minicurso() {
                   onChange={handleInputDescricao}
                 />
               </div>
+            </form>
+            {!isloading ? (
               <div className="button">
+                <button
+                  id="voltar-palestra"
+                  type="submit"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    history.push('/dashboard');
+                  }}
+                >
+                  Voltar
+                </button>
                 <button type="submit" onClick={handleSubmit}>
                   Cadastrar
                 </button>
               </div>
-            </form>
+            ) : (
+              <div id="loading-Palestra">
+                <div id="loadding-container">
+                  <div id="loadding-container-icon">
+                    <FiLoader size={25} />
+                  </div>
+                  <div id="loadding-container-text">Carregando</div>
+                </div>
+              </div>
+            )}
+            {error.status && <p id="error-palestra">*{error.menssage}</p>}
           </div>
         </div>
       </div>

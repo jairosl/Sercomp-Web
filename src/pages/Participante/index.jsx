@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { FiLoader } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 import './style.css';
 import * as yup from 'yup';
 import logo from '../../assets/logo.png';
@@ -12,6 +14,9 @@ function Participante() {
   const [senha, setSenha] = useState('');
   const [universidade, setUniversidade] = useState('uepb');
   const [curso, setCurso] = useState('');
+
+  const [isloading, setIsLoading] = useState(false);
+  const [error, setError] = useState({ status: false, menssage: '' });
 
   const history = useHistory();
 
@@ -62,17 +67,30 @@ function Participante() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+    setIsLoading(true);
     const dados = { nome, email, senha, universidade, curso };
     if (!dataSchema.isValidSync(dados)) {
-      console.log('erro');
-    } else {
-      try {
-        const cabecalho = { id: idAdmin };
-        await api.post('/user', dados, { headers: cabecalho });
-        document.getElementById('formulario-participante').reset();
-      } catch (Error) {
-        console.log(Error.response.data.error);
-      }
+      setError({ status: true, menssage: 'Campo ou dados invalidos' });
+      setIsLoading(false);
+      return null;
+    }
+    try {
+      const cabecalho = { id: idAdmin };
+      await api.post('/user', dados, { headers: cabecalho });
+      setError({ status: false });
+      setIsLoading(false);
+      document.getElementById('formulario-participante').reset();
+      toast.success('Participante Criado com Sucesso', {
+        position: toast.POSITION.BOTTOM_RIGHT,
+      });
+
+      return null;
+    } catch (Error) {
+      setError({ status: true, menssage: `${Error.response.data.error}` });
+
+      setIsLoading(false);
+
+      return null;
     }
   }
 
@@ -137,12 +155,34 @@ function Participante() {
                   />
                 </div>
               </div>
+            </form>
+            {!isloading ? (
               <div className="button">
+                <button
+                  id="voltar-palestra"
+                  type="submit"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    history.push('/dashboard');
+                  }}
+                >
+                  Voltar
+                </button>
                 <button type="submit" onClick={handleSubmit}>
                   Cadastrar
                 </button>
               </div>
-            </form>
+            ) : (
+              <div id="loading-Palestra">
+                <div id="loadding-container">
+                  <div id="loadding-container-icon">
+                    <FiLoader size={25} />
+                  </div>
+                  <div id="loadding-container-text">Carregando</div>
+                </div>
+              </div>
+            )}
+            {error.status && <p id="error-palestra">*{error.menssage}</p>}
           </div>
         </div>
       </div>
