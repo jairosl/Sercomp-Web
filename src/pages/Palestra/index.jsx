@@ -190,6 +190,16 @@ function Palestra() {
             </form>
             {!isloading ? (
               <div className="button">
+                <button
+                  id="voltar-palestra"
+                  type="submit"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    history.push('/dashboard');
+                  }}
+                >
+                  Voltar
+                </button>
                 <button type="submit" onClick={handleSubmit}>
                   Cadastrar
                 </button>

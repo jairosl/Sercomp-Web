@@ -116,6 +116,24 @@ form textarea {
   justify-content: flex-end;
 }
 
+.button button#voltar-palestra {
+    font-size: 18px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: 1px solid red;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.button button#voltar-palestra:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+}
+
 .button button {
   background: var(--tertiary);
   color: #fff;
