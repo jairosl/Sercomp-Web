@@ -144,11 +144,13 @@ form textarea {
   border-radius: 15px;
   justify-self: center;
   transition: all 0.3s;
+  border: 1px solid var(--tertiary);
 }
 
 .button button:hover {
-  border-radius: 2px solid var(--primary) ;
-  border-radius: 10px;
+  border: 1px solid var(--tertiary);
+  background-color: white;
+  color: var(--tertiary);
 }
 
 #loading-Palestra {
