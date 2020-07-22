@@ -7,14 +7,6 @@
 [Tecnology](#Tecnology) <span>|<span>
 [Layout](#Layout) 
 
-<p align="center">
-  <b>Some Links:</b><br>
-  <a href="Project">Project</a> |
-  <a href="#">Link 2</a> |
-  <a href="#">Link 3</a>
-  <br><br>
-</p>
-
 ## Project
 
 <p>
