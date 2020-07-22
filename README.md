@@ -10,24 +10,27 @@
   <img src="https://github.com/jairosl/Sercomp-Web/blob/master/src/assets/logo.png" alt="logo.png" width="400px" height="250px">
 </h1>
 
-
+## 💻The Project
 <p>
   The Sercomp project aims to improve the search for event informations through the WEB aplication for the Admins and Mobile to the users.
 <p>
+<p>
+  - The admin will be able to register all participants and events of Sercomp
+</p>
+<p>
+  - The mobile users will be able to see all your joined events, like speeches, mini courses and more.
+</p>
 
+## :rocket:Tecnology
+- [Figma](https://www.figma.com/)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [React Native](https://facebook.github.io/react-native/)
 
+## 🔖Layout 
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Our layout was built with a answome WEB app... Figma!
+Try it yourself
 
 ### `yarn test`
 
