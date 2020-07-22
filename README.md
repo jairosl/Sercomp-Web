@@ -1,18 +1,24 @@
-<h1 align="center">Sercomp Project</h1>
-
-<p align="center">
-  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnology">Tecnology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>
-</p>
-
 <h1 align="center">
-  <img src="https://github.com/jairosl/Sercomp-Web/blob/master/src/assets/logo.png" alt="logo.png" width="400px" height="250px">
+  <p>Sercomp Project</p>
+  <img src="./src/assets/logo-title.png" alt="logo.png" >
 </h1>
 
-## 💻The Project
+[Project](#Project) <span>|<span>
+[Tecnology](#Tecnology) <span>|<span>
+[Layout](#Layout) 
+
+<p align="center">
+  <b>Some Links:</b><br>
+  <a href="Project">Project</a> |
+  <a href="#">Link 2</a> |
+  <a href="#">Link 3</a>
+  <br><br>
+</p>
+
+## Project
+
 <p>
-  The Sercomp project aims to improve the search for event informations through the WEB aplication for the Admins and Mobile to the users.
+   - The Sercomp project aims to improve the search for event informations through the WEB aplication for the Admins and Mobile to the users.
 <p>
 <p>
   - The admin will be able to register all participants and Sercomp events
@@ -21,13 +27,14 @@
   - The mobile users will be able to see all your joined events, like speeches, mini courses and more.
 </p>
 
-## :rocket:Tecnology
+## Tecnology
 - [Figma](https://www.figma.com/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
 - [React Native](https://facebook.github.io/react-native/)
+- [React-toastify](https://fkhadra.github.io/react-toastify/introduction/)
 
-## 🔖Layout 
+## Layout 
 
 - Our layout was built with a answome WEB app...
 [Figma](https://www.figma.com/)!
