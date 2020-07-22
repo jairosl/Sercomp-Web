@@ -27,7 +27,7 @@
 
 #overflow {
     width: 715px; 
-    height: 100px; 
+    max-height: 157px; 
     overflow: auto;
 }
 

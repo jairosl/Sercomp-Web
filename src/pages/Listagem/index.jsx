@@ -72,6 +72,7 @@ function Listagem() {
                     <tr id="listagem-titulo">
                       <th>ID</th>
                       <th>Nome</th>
+                      <th>Email</th>
                       <th>Curso</th>
                       <th>Universidade</th>
                     </tr>
@@ -81,6 +82,7 @@ function Listagem() {
                       <tr key={participante.id}>
                         <td>{participante.id}</td>
                         <td>{participante.nome}</td>
+                        <td>{participante.email}</td>
                         <td>{participante.curso}</td>
                         <td>{participante.universidade}</td>
                       </tr>

@@ -50,6 +50,11 @@ function Dashboard() {
                     <Link to="/participante">Cadastrar Participantes</Link>
                   </li>
                   <li>
+                    <Link to="/cadastro">
+                      Cadastrar Participante no minicurso
+                    </Link>
+                  </li>
+                  <li>
                     <Link to="/listagem">Listagem dos Dados</Link>
                   </li>
                 </ul>

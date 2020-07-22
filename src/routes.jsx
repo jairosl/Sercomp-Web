@@ -7,6 +7,7 @@ import Palestra from './pages/Palestra';
 import Minicurso from './pages/Minicurso';
 import Paricipante from './pages/Participante';
 import Listagem from './pages/Listagem';
+import CadastroMinicurso from './pages/CadastroMinicurso';
 
 function routes() {
   return (
@@ -17,6 +18,7 @@ function routes() {
       <Route component={Minicurso} path="/minicurso" />
       <Route component={Paricipante} path="/participante" />
       <Route component={Listagem} path="/listagem" />
+      <Route component={CadastroMinicurso} path="/cadastro" />
     </BrowserRouter>
   );
 }
