@@ -12,7 +12,7 @@
 
 
 <p>
-  The Sercomp project aims to improve the search for event informations, through the WEB aplication for the Admins and Mobile to the users.
+  The Sercomp project aims to improve the search for event informations through the WEB aplication for the Admins and Mobile to the users.
 <p>
 
 
