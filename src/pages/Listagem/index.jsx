@@ -66,81 +66,84 @@ function Listagem() {
                 <br /> de Dados
               </h1>
               <h1 id="titulo-listagem">Participantes:</h1>
-
-              <table id="listagem">
-                <thead>
-                  <tr id="listagem-titulo">
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Curso</th>
-                    <th>Universidade</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {user.map((participante) => (
-                    <tr key={participante.id}>
-                      <td>{participante.id}</td>
-                      <td>{participante.nome}</td>
-                      <td>{participante.curso}</td>
-                      <td>{participante.universidade}</td>
+              <div id="overflow">
+                <table id="listagem">
+                  <thead>
+                    <tr id="listagem-titulo">
+                      <th>ID</th>
+                      <th>Nome</th>
+                      <th>Curso</th>
+                      <th>Universidade</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {user.map((participante) => (
+                      <tr key={participante.id}>
+                        <td>{participante.id}</td>
+                        <td>{participante.nome}</td>
+                        <td>{participante.curso}</td>
+                        <td>{participante.universidade}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <h1 id="titulo-listagem">Palestras:</h1>
-
-              <table id="listagem">
-                <thead>
-                  <tr id="listagem-titulo">
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Palestrante</th>
-                    <th>Sala</th>
-                    <th>Data</th>
-                    <th>Hora</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {palestra.map((palestras) => (
-                    <tr key={palestras.id}>
-                      <td>{palestras.id}</td>
-                      <td>{palestras.titulo}</td>
-                      <td>{palestras.nome_palestrante}</td>
-                      <td>{palestras.sala}</td>
-                      <td>{palestras.data}</td>
-                      <td>{palestras.horario}</td>
+              <div id="overflow">
+                <table id="listagem">
+                  <thead>
+                    <tr id="listagem-titulo">
+                      <th>ID</th>
+                      <th>Título</th>
+                      <th>Palestrante</th>
+                      <th>Sala</th>
+                      <th>Data</th>
+                      <th>Hora</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {palestra.map((palestras) => (
+                      <tr key={palestras.id}>
+                        <td>{palestras.id}</td>
+                        <td>{palestras.titulo}</td>
+                        <td>{palestras.nome_palestrante}</td>
+                        <td>{palestras.sala}</td>
+                        <td>{palestras.data}</td>
+                        <td>{palestras.horario}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <h1 id="titulo-listagem">Minicursos:</h1>
-
-              <table id="listagem">
-                <thead>
-                  <tr id="listagem-titulo">
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Professor</th>
-                    <th>Sala</th>
-                    <th>Data</th>
-                    <th>Hora</th>
-                    <th>Capacidade</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {minicurso.map((minicursos) => (
-                    <tr key={minicursos.id}>
-                      <td>{minicursos.id}</td>
-                      <td>{minicursos.titulo}</td>
-                      <td>{minicursos.nome_professor}</td>
-                      <td>{minicursos.sala}</td>
-                      <td>{minicursos.data}</td>
-                      <td>{minicursos.horario}</td>
-                      <td>{minicursos.qnt_alunos}</td>
+              <div id="overflow">
+                <table id="listagem">
+                  <thead>
+                    <tr id="listagem-titulo">
+                      <th>ID</th>
+                      <th>Título</th>
+                      <th>Professor</th>
+                      <th>Sala</th>
+                      <th>Data</th>
+                      <th>Hora</th>
+                      <th>Capacidade</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {minicurso.map((minicursos) => (
+                      <tr key={minicursos.id}>
+                        <td>{minicursos.id}</td>
+                        <td>{minicursos.titulo}</td>
+                        <td>{minicursos.nome_professor}</td>
+                        <td>{minicursos.sala}</td>
+                        <td>{minicursos.data}</td>
+                        <td>{minicursos.horario}</td>
+                        <td>{minicursos.qnt_alunos}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <div id="voltar">
                 <button
                   type="submit"

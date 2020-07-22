@@ -25,6 +25,12 @@
     text-align: left;
 }
 
+#overflow {
+    width: 715px; 
+    height: 100px; 
+    overflow: auto;
+}
+
 #listagem {
     width: 700px;
 }
