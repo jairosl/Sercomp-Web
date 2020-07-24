@@ -6,6 +6,7 @@
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#eye-Screens">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -37,6 +38,13 @@
 [Figma](https://www.figma.com/)!
 Try it yourself!
 
+## :eye: Screens
+  * [Sing In](./github/Singin.png)
+  * [Sing In](./github/Singin.png)
+  * [Sing In](./github/Singin.png)
+  * [Sing In](./github/Singin.png)
+
+  <br>
 <p>
   
   <img src=".github/Singin.png" alt="logo.png"  >
@@ -49,5 +57,3 @@ Try it yourself!
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
-height="150px"
