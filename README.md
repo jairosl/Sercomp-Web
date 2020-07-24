@@ -3,11 +3,15 @@
   <img src="./src/assets/logo-title.png" alt="logo.png" >
 </h1>
 
-[Project](#Project) <span>|<span>
-[Tecnology](#Tecnology) <span>|<span>
-[Layout](#Layout) 
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>
+</p>
 
-## Project
+<br>
+
+## 💻 Projeto
 
 <p>
    - The Sercomp project aims to improve the search for event informations through the WEB aplication for the Admins and Mobile to the users.
@@ -19,7 +23,7 @@
   - The mobile users will be able to see all your joined events, like speeches, mini courses and more.
 </p>
 
-## Tecnology
+## :rocket: Tecnologias
 - [Figma](https://www.figma.com/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
