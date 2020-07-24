@@ -35,19 +35,7 @@
 
 ## 🔖 Layout
 
-- Our layout was built with a answome WEB app...
-[Figma](https://www.figma.com/)!
-Try it yourself!
-
-## :eye: Screens
-  * Sing In
-  * DashBoard
-  * Create Lecture
-  * Create Mini Course
-  * Register Participants in a Mini Course
-  * List of all data
-  
-  **See some screens just below ⬇️**
+**See some screens just below ⬇️**
 
   <br>
 <p>
@@ -58,6 +46,18 @@ Try it yourself!
   <img src=".github/Listagem.png" alt="logo.png" width="350px" >
   
 </p>
+
+<br>
+
+## :eye: Screens
+  * Sing In
+  * DashBoard
+  * Create Lecture
+  * Create Mini Course
+  * Register Participants in a Mini Course
+  * List of all data
+  
+ <br> 
 
 ## :closed_book: Commands
 
