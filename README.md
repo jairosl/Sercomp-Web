@@ -30,8 +30,8 @@
 - [Figma](https://www.figma.com/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
 - [React-toastify](https://fkhadra.github.io/react-toastify/introduction/)
+- [React-input-mask](https://github.com/sanniassin/react-input-mask)
 
 ## 🔖 Layout
 
