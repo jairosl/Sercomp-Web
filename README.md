@@ -4,17 +4,17 @@
 </h1>
 
 <p align="center">
-  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-Technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#eye-Screens">Screens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#closed_book-Commands">Commands</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">License</a>
+  <a href="#memo-License">License</a>
 </p>
 
 <br>
 
-## 💻 Projeto
+## 💻 Project
 
 <p>
    - The Sercomp project aims to improve the search for event informations through the WEB aplication for the Admins and Mobile to the users.
@@ -26,7 +26,7 @@
   - The mobile users will be able to see all your joined events, like speeches, mini courses and more.
 </p>
 
-## :rocket: Tecnologias
+## :rocket: Technology
 - [Figma](https://www.figma.com/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
@@ -75,6 +75,6 @@
 
 <br>
 
-## :memo: Licença
+## :memo: License
 
 This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details
