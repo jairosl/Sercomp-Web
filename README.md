@@ -62,6 +62,17 @@
 
 ## :closed_book: Commands
 
+
+  ### First enter the folder and in the console enter the following command: 
+
+  >`npm i` &nbsp;&nbsp; or  &nbsp;&nbsp;  `yarn`
+
+  ### After the run command, run the following command: 
+
+  >`npm run start` &nbsp;&nbsp; or  &nbsp;&nbsp;  `yarn start`
+
+
+
 <br>
 
 ## :memo: Licença
