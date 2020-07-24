@@ -47,7 +47,7 @@ Try it yourself!
   * Register Participants in a Mini Course
   * List of all data
   
-  **see some screens just below ⬇️**
+  **See some screens just below ⬇️**
 
   <br>
 <p>
@@ -62,6 +62,7 @@ Try it yourself!
 ## :closed_book: Commands
 
 <br>
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
