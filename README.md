@@ -4,11 +4,12 @@
 </h1>
 
 <p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#eye-Screens">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#eye-Screens">Screens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#closed_book-Commands">Commands</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença">License</a>
 </p>
 
 <br>
@@ -39,10 +40,14 @@
 Try it yourself!
 
 ## :eye: Screens
-  * [Sing In](./github/Singin.png)
-  * [Sing In](./github/Singin.png)
-  * [Sing In](./github/Singin.png)
-  * [Sing In](./github/Singin.png)
+  * Sing In
+  * DashBoard
+  * Create Lecture
+  * Create Mini Course
+  * Register Participants in a Mini Course
+  * List of all data
+  
+  **see some screens just below ⬇️**
 
   <br>
 <p>
@@ -54,6 +59,9 @@ Try it yourself!
   
 </p>
 
+## :closed_book: Commands
+
+<br>
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
