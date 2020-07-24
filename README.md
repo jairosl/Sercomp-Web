@@ -37,6 +37,17 @@
 [Figma](https://www.figma.com/)!
 Try it yourself!
 
+<p>
+  
+  <img src=".github/Singin.png" alt="logo.png"  >
+  <img src=".github/dashboard.png" alt="logo.png"  >
+  <img src=".github/Palestra.png" alt="logo.png" width="415px" >
+  <img src=".github/Listagem.png" alt="logo.png" width="350px" >
+  
+</p>
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+height="150px"
